@@ -1,3 +1,4 @@
+@file:OptIn(kotlinx.serialization.InternalSerializationApi::class)
 package fi.project.petcare.model.data
 
 import kotlinx.serialization.SerialName
