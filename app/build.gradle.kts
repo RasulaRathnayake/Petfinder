@@ -22,9 +22,9 @@ android {
         val properties = Properties()
         properties.load(keystoreFile.inputStream())
 
-        val apiKey = properties.getProperty("api.key") ?: ""
-        val apiUrl = properties.getProperty("api.url") ?: ""
-        val serverClientId = properties.getProperty("server.client.id") ?: ""
+        val apiKey = properties.getProperty("api.key") ?: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inh6cnFwZXFwcnNqZGRtc3lnY2JvIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTY3MjYyNTYsImV4cCI6MjA3MjMwMjI1Nn0.Y0rQB_85w2RKU5yvu5jUybgAYFiqryNReWGJDywMI8Q"
+        val apiUrl = properties.getProperty("api.url") ?: "https://xzrqpeqprsjddmsygcbo.supabase.co"
+        val serverClientId = properties.getProperty("server.client.id") ?: "281776486417-93kc2ef64fosl90vq8g5pipdrjnbo5l0.apps.googleusercontent.com"
 
         // BuildConfig fields with proper quotes
         buildConfigField("String", "SUPABASE_KEY", "\"$apiKey\"")

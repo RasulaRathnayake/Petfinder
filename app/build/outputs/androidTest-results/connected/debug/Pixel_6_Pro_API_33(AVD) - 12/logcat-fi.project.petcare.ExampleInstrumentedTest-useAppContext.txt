@@ -1,2 +1,0 @@
-09-02 21:17:50.896 31295 31312 I TestRunner: started: useAppContext(fi.project.petcare.ExampleInstrumentedTest)
-09-02 21:17:50.903 31295 31312 I TestRunner: finished: useAppContext(fi.project.petcare.ExampleInstrumentedTest)
