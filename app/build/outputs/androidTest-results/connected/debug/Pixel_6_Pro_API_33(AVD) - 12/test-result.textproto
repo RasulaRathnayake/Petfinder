@@ -1,0 +1,68 @@
+# 2025-09-02T15:47:53.115147Z:
+test_suite_meta_data {
+  scheduled_test_case_count: 1
+}
+test_status: PASSED
+test_result {
+  test_case {
+    test_class: "ExampleInstrumentedTest"
+    test_package: "fi.project.petcare"
+    test_method: "useAppContext"
+    start_time {
+      seconds: 1756828071
+      nanos: 761000000
+    }
+    end_time {
+      seconds: 1756828071
+      nanos: 786000000
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/user/AndroidStudioProjects/Petfinderproject/app/build/outputs/androidTest-results/connected/debug/Pixel_6_Pro_API_33(AVD) - 12/logcat-fi.project.petcare.ExampleInstrumentedTest-useAppContext.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/user/AndroidStudioProjects/Petfinderproject/app/build/outputs/androidTest-results/connected/debug/Pixel_6_Pro_API_33(AVD) - 12/device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/user/AndroidStudioProjects/Petfinderproject/app/build/outputs/androidTest-results/connected/debug/Pixel_6_Pro_API_33(AVD) - 12/meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/user/AndroidStudioProjects/Petfinderproject/app/build/outputs/androidTest-results/connected/debug/Pixel_6_Pro_API_33(AVD) - 12/cpuinfo"
+    }
+  }
+}
+output_artifact {
+  label {
+    label: "test-results.log"
+    namespace: "com.google.testing.platform.runtime.android.driver.AndroidInstrumentationDriver"
+  }
+  source_path {
+    path: "/Users/user/AndroidStudioProjects/Petfinderproject/app/build/outputs/androidTest-results/connected/debug/Pixel_6_Pro_API_33(AVD) - 12/testlog/test-results.log"
+  }
+  type: TEST_DATA
+  mime_type: "text/plain"
+}

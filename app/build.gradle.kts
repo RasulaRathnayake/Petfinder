@@ -12,11 +12,12 @@ android {
 
     defaultConfig {
         applicationId = "fi.project.petcare"
-        minSdk = 33
+        minSdk = 28
         targetSdk = 34
         versionCode = 1
         versionName = "0.1.0"
 
+        // Load credentials from local.properties
         val keystoreFile = project.rootProject.file("local.properties")
         val properties = Properties()
         properties.load(keystoreFile.inputStream())
@@ -25,9 +26,10 @@ android {
         val apiUrl = properties.getProperty("api.url") ?: ""
         val serverClientId = properties.getProperty("server.client.id") ?: ""
 
-        buildConfigField(type = "String", name = "SUPABASE_KEY", value = apiKey)
-        buildConfigField(type = "String", name = "SUPABASE_URL", value = apiUrl)
-        buildConfigField(type = "String", name = "SERVER_CLIENT_ID", value = serverClientId)
+        // BuildConfig fields with proper quotes
+        buildConfigField("String", "SUPABASE_KEY", "\"$apiKey\"")
+        buildConfigField("String", "SUPABASE_URL", "\"$apiUrl\"")
+        buildConfigField("String", "SERVER_CLIENT_ID", "\"$serverClientId\"")
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables {
@@ -44,20 +46,25 @@ android {
             )
         }
     }
+
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_17
         targetCompatibility = JavaVersion.VERSION_17
     }
+
     kotlinOptions {
         jvmTarget = "17"
     }
+
     buildFeatures {
         compose = true
         buildConfig = true
     }
+
     composeOptions {
         kotlinCompilerExtensionVersion = "1.5.11"
     }
+
     packaging {
         resources {
             excludes += "/META-INF/{AL2.0,LGPL2.1}"
@@ -66,8 +73,6 @@ android {
 }
 
 dependencies {
-
-
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.activity.compose)
@@ -87,10 +92,16 @@ dependencies {
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
 
-    // Credentials manager and sign in with google
+    // Add these with quotes!
+    implementation("org.osmdroid:osmdroid-android:6.1.15")
+    implementation("androidx.appcompat:appcompat:1.6.1")
+    implementation("androidx.preference:preference-ktx:1.2.1")
+
+    // Credentials manager and Google sign-in
     implementation(libs.androidx.credentials)
     implementation(libs.androidx.credentials.play.services.auth)
     implementation(libs.googleid)
+
     // Supabase libraries
     implementation(platform(libs.bom))
     implementation(libs.postgrest.kt)
@@ -99,3 +110,4 @@ dependencies {
     implementation(libs.gotrue.kt)
     implementation(libs.ktor.client.android)
 }
+
