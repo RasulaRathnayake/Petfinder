@@ -28,7 +28,7 @@ With a simple, clean interface and strong backend support from **Supabase**, Pet
 
 ---
 
-## 🚀 Getting Started
+##🚀 Getting Started
 
 ### Prerequisites
 - Android Studio (latest version)
