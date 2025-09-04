@@ -73,41 +73,55 @@ android {
 }
 
 dependencies {
-    implementation(libs.androidx.core.ktx)
-    implementation(libs.androidx.lifecycle.runtime.ktx)
-    implementation(libs.androidx.activity.compose)
-    implementation(platform(libs.androidx.compose.bom))
-    implementation(libs.androidx.ui)
-    implementation(libs.androidx.ui.graphics)
-    implementation(libs.androidx.ui.tooling.preview)
-    implementation(libs.androidx.material3)
-    implementation(libs.androidx.material.icons.extended)
-    implementation(libs.androidx.lifecycle.viewmodel.compose)
-    implementation(libs.androidx.navigation.compose)
-    testImplementation(libs.junit)
-    androidTestImplementation(libs.androidx.junit)
-    androidTestImplementation(libs.androidx.espresso.core)
-    androidTestImplementation(platform(libs.androidx.compose.bom))
-    androidTestImplementation(libs.androidx.ui.test.junit4)
-    debugImplementation(libs.androidx.ui.tooling)
-    debugImplementation(libs.androidx.ui.test.manifest)
+    dependencies {
+        implementation(libs.androidx.core.ktx)
+        implementation(libs.androidx.lifecycle.runtime.ktx)
+        implementation(libs.androidx.activity.compose)
+        implementation(platform(libs.androidx.compose.bom))
+        implementation(libs.androidx.ui)
+        implementation(libs.androidx.ui.graphics)
+        implementation(libs.androidx.ui.tooling.preview)
+        implementation(libs.androidx.material3)
+        implementation(libs.androidx.material.icons.extended)
+        implementation(libs.androidx.lifecycle.viewmodel.compose)
+        implementation(libs.androidx.navigation.compose)
 
-    // Add these with quotes!
-    implementation("org.osmdroid:osmdroid-android:6.1.15")
-    implementation("androidx.appcompat:appcompat:1.6.1")
-    implementation("androidx.preference:preference-ktx:1.2.1")
+        // Unit test
+        testImplementation("junit:junit:4.13.2")
+        testImplementation("com.google.truth:truth:1.4.4") // <- added quotes
 
-    // Credentials manager and Google sign-in
-    implementation(libs.androidx.credentials)
-    implementation(libs.androidx.credentials.play.services.auth)
-    implementation(libs.googleid)
+        // Instrumented / Compose tests
+        androidTestImplementation(libs.androidx.junit)
+        androidTestImplementation(libs.androidx.espresso.core)
+        androidTestImplementation(platform(libs.androidx.compose.bom))
+        androidTestImplementation(libs.androidx.ui.test.junit4)
+        debugImplementation(libs.androidx.ui.tooling)
+        debugImplementation(libs.androidx.ui.test.manifest)
 
-    // Supabase libraries
-    implementation(platform(libs.bom))
-    implementation(libs.postgrest.kt)
-    implementation(libs.compose.auth.ui)
-    implementation(libs.compose.auth)
-    implementation(libs.gotrue.kt)
-    implementation(libs.ktor.client.android)
+        // Other libraries
+        implementation("org.osmdroid:osmdroid-android:6.1.15")
+        implementation("androidx.appcompat:appcompat:1.6.1")
+        implementation("androidx.preference:preference-ktx:1.2.1")
+
+        // Credentials manager and Google sign-in
+        implementation(libs.androidx.credentials)
+        implementation(libs.androidx.credentials.play.services.auth)
+        implementation(libs.googleid)
+
+        // Supabase libraries
+        implementation(platform(libs.bom))
+        implementation(libs.postgrest.kt)
+        implementation(libs.compose.auth.ui)
+        implementation(libs.compose.auth)
+        implementation(libs.gotrue.kt)
+        implementation(libs.ktor.client.android)
+
+        androidTestImplementation("androidx.compose.ui:ui-test-junit4:1.5.11")
+        debugImplementation("androidx.compose.ui:ui-test-manifest:1.5.11")
+
+
+
+    }
+
+
 }
-

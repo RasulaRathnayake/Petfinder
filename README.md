@@ -65,7 +65,7 @@ This project is licensed under the **MIT License**. You are free to use, modify,
 
 -   Supabase – Backend as a Service
 
--   [OSMDroid](https://github.com/osmdroid/osmdroid?utm_source=chatgpt.com) – OpenStreetMap Android SDK
+-   OpenStreetMap Android SDK
 
 -   Android Jetpack – Compose & MVVM
 
