@@ -88,7 +88,8 @@ dependencies {
 
         // Unit test
         testImplementation("junit:junit:4.13.2")
-        testImplementation("com.google.truth:truth:1.4.4") // <- added quotes
+        testImplementation("com.google.truth:truth:1.4.4")
+
 
         // Instrumented / Compose tests
         androidTestImplementation(libs.androidx.junit)
