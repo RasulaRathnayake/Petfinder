@@ -66,9 +66,9 @@ fi.project.petcare.app-savedstate-ktx-1.2.1-64 /Users/user/.gradle/caches/8.10.2
 fi.project.petcare.app-navigation-runtime-2.7.7-65 /Users/user/.gradle/caches/8.10.2/transforms/f905f96642208ea6d3aaf00905cb13c8/transformed/navigation-runtime-2.7.7/res
 fi.project.petcare.app-lifecycle-livedata-core-2.8.3-66 /Users/user/.gradle/caches/8.10.2/transforms/faff37c550cdef0cf66e0427f9bb8edc/transformed/lifecycle-livedata-core-2.8.3/res
 fi.project.petcare.app-lifecycle-runtime-release-67 /Users/user/.gradle/caches/8.10.2/transforms/fc2bf115d6b772791238b09924abe6bd/transformed/lifecycle-runtime-release/res
-fi.project.petcare.app-resValues-68 /Users/user/AndroidStudioProjects/Petfinderproject/app/build/generated/res/resValues/debug
-fi.project.petcare.app-packageDebugResources-69 /Users/user/AndroidStudioProjects/Petfinderproject/app/build/intermediates/incremental/debug/packageDebugResources/merged.dir
-fi.project.petcare.app-packageDebugResources-70 /Users/user/AndroidStudioProjects/Petfinderproject/app/build/intermediates/incremental/debug/packageDebugResources/stripped.dir
-fi.project.petcare.app-debug-71 /Users/user/AndroidStudioProjects/Petfinderproject/app/build/intermediates/merged_res/debug/mergeDebugResources
-fi.project.petcare.app-debug-72 /Users/user/AndroidStudioProjects/Petfinderproject/app/src/debug/res
-fi.project.petcare.app-main-73 /Users/user/AndroidStudioProjects/Petfinderproject/app/src/main/res
+fi.project.petcare.app-resValues-68 /Users/user/AndroidStudioProjects/Petfinderpetcare/app/build/generated/res/resValues/debug
+fi.project.petcare.app-packageDebugResources-69 /Users/user/AndroidStudioProjects/Petfinderpetcare/app/build/intermediates/incremental/debug/packageDebugResources/merged.dir
+fi.project.petcare.app-packageDebugResources-70 /Users/user/AndroidStudioProjects/Petfinderpetcare/app/build/intermediates/incremental/debug/packageDebugResources/stripped.dir
+fi.project.petcare.app-debug-71 /Users/user/AndroidStudioProjects/Petfinderpetcare/app/build/intermediates/merged_res/debug/mergeDebugResources
+fi.project.petcare.app-debug-72 /Users/user/AndroidStudioProjects/Petfinderpetcare/app/src/debug/res
+fi.project.petcare.app-main-73 /Users/user/AndroidStudioProjects/Petfinderpetcare/app/src/main/res

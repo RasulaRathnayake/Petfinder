@@ -21,6 +21,7 @@ import fi.project.petcare.model.data.User
 import fi.project.petcare.ui.composables.Dashboard
 import fi.project.petcare.ui.screens.HomeScreen
 import fi.project.petcare.ui.screens.PetListScreen
+import fi.project.petcare.ui.screens.CommunityScreen
 import fi.project.petcare.ui.screens.ProfileScreen
 import fi.project.petcare.ui.screens.SettingsScreen
 import fi.project.petcare.viewmodel.AuthUiState
@@ -79,11 +80,8 @@ fun NavGraph(
                 onNavigateToSettings = { navController.navigate(Screen.Settings.route) },
                 navController = navController
             ) {
-                Text(
-                    text = "1234 Elm Street\n" +
-                            "Springfield, IL 62704\n" +
-                            "USA\n"
-                )
+
+                CommunityScreen()
             }
         }
         composable(
