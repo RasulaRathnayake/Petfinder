@@ -127,7 +127,7 @@ fun PetAddressDialog(
                         tint = MaterialTheme.colorScheme.primary
                     )
                     Text(
-                        text = "123 Pet Street, PetCity, 12345",
+                        text = "We found your pet right away.",
                         style = MaterialTheme.typography.bodyLarge
                     )
                 }
