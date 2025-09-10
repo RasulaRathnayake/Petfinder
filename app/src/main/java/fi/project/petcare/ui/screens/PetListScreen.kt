@@ -5,7 +5,6 @@ import androidx.compose.animation.core.tween
 import androidx.compose.animation.fadeIn
 import androidx.compose.animation.fadeOut
 import androidx.compose.animation.togetherWith
-import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -37,26 +36,24 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
-import androidx.compose.ui.graphics.ColorFilter
-import androidx.compose.ui.layout.ContentScale
-import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.window.Dialog
 import fi.project.petcare.R
 import fi.project.petcare.model.data.PetResponse
 import fi.project.petcare.ui.composables.FullScreenModal
 import fi.project.petcare.ui.composables.LoadingIndicator
+import fi.project.petcare.ui.composables.PetAvatar
 import fi.project.petcare.ui.theme.bg_gr
 import fi.project.petcare.viewmodel.PetUiState
 import fi.project.petcare.viewmodel.PetViewModel
-import androidx.compose.ui.window.Dialog
 
 @Composable
 fun PetHeader(
     toggleShowFullDialog: () -> Unit,
     onDelete: () -> Unit = {}
 ) {
-    Row (
+    Row(
         verticalAlignment = Alignment.CenterVertically,
         horizontalArrangement = Arrangement.SpaceBetween,
         modifier = Modifier
@@ -64,9 +61,7 @@ fun PetHeader(
             .fillMaxWidth()
             .padding(horizontal = 16.dp)
             .background(MaterialTheme.colorScheme.surface)
-    )
-
-    {
+    ) {
         IconButton(
             onClick = { onDelete() }
         ) {
@@ -79,7 +74,7 @@ fun PetHeader(
             onClick = { toggleShowFullDialog() }
         ) {
             Text(
-                text ="Edit"
+                text = "Edit"
             )
         }
     }
@@ -105,16 +100,15 @@ fun PetAddressDialog(
                     text = "$petName's Registration Address",
                     style = MaterialTheme.typography.titleLarge
                 )
-                Image(
-                    painter = painterResource(id = R.drawable.location), // Reference the location.jpg from drawable
+                androidx.compose.foundation.Image(
+                    painter = androidx.compose.ui.res.painterResource(id = R.drawable.location),
                     contentDescription = "Pet Location",
                     modifier = Modifier
                         .fillMaxWidth()
                         .height(200.dp)
-                        .padding(bottom = 12.dp), // Adds padding to the image
-                    contentScale = ContentScale.Crop
+                        .padding(bottom = 12.dp),
+                    contentScale = androidx.compose.ui.layout.ContentScale.Crop
                 )
-
 
                 Row(
                     verticalAlignment = Alignment.CenterVertically,
@@ -159,7 +153,7 @@ fun PetListScreen(
             ) togetherWith fadeOut(animationSpec = tween(2000))
         },
         label = "Animated Content"
-    ) {  targetState ->
+    ) { targetState ->
         when (targetState) {
             is PetUiState.Loading -> {
                 LoadingIndicator(
@@ -167,8 +161,9 @@ fun PetListScreen(
                     color = bg_gr
                 )
             }
+
             is PetUiState.Success -> {
-                LazyColumn (
+                LazyColumn(
                     horizontalAlignment = Alignment.CenterHorizontally,
                     verticalArrangement = Arrangement.spacedBy(16.dp)
                 ) {
@@ -191,6 +186,7 @@ fun PetListScreen(
                     }
                 }
             }
+
             is PetUiState.Error -> {
                 val pet = PetResponse.Pet(
                     name = "Fluffy",
@@ -204,7 +200,7 @@ fun PetListScreen(
                     gender = "Male",
                     locate = "london,uk"
                 )
-                Column (
+                Column(
                     horizontalAlignment = Alignment.CenterHorizontally,
                     verticalArrangement = Arrangement.spacedBy(8.dp)
                 ) {
@@ -235,15 +231,15 @@ fun CardsInfoRow(
         else if (pet.gender == "Male") Icons.Default.Male
         else Icons.Outlined.Circle
 
-    Row (
+    Row(
         horizontalArrangement = Arrangement.spacedBy(4.dp),
         modifier = Modifier.fillMaxWidth()
     ) {
-        Card (
+        Card(
             modifier = Modifier.weight(1f),
             shape = MaterialTheme.shapes.extraSmall
         ) {
-            Column (
+            Column(
                 verticalArrangement = Arrangement.spacedBy(8.dp),
                 modifier = Modifier.padding(16.dp)
             ) {
@@ -259,11 +255,11 @@ fun CardsInfoRow(
                 )
             }
         }
-        Card (
+        Card(
             modifier = Modifier.weight(1f),
             shape = MaterialTheme.shapes.extraSmall
         ) {
-            Column (
+            Column(
                 verticalArrangement = Arrangement.spacedBy(8.dp),
                 modifier = Modifier.padding(16.dp)
             ) {
@@ -277,11 +273,11 @@ fun CardsInfoRow(
                 )
             }
         }
-        Card (
+        Card(
             modifier = Modifier.weight(1f),
             shape = MaterialTheme.shapes.extraSmall
         ) {
-            Column (
+            Column(
                 verticalArrangement = Arrangement.spacedBy(8.dp),
                 modifier = Modifier.padding(16.dp)
             ) {
@@ -327,30 +323,20 @@ fun PetInfo(
             Row(
                 verticalAlignment = Alignment.CenterVertically,
                 horizontalArrangement = Arrangement.spacedBy(16.dp),
-                modifier = Modifier
-                    .padding(16.dp)
+                modifier = Modifier.padding(16.dp)
             ) {
-                if (pet.name == "Fluffy") {
-                    Image(
-                        painter = painterResource(id = R.drawable.pet_icon_1),
-                        contentDescription = "Pet Cover Photo",
-                        modifier = Modifier
-                            .size(98.dp)
-                            .clip(CircleShape),
-                        contentScale = ContentScale.Crop
-                    )
-                } else {
-                    Image(
-                        painter = painterResource(id = R.drawable.ic_petcare_default),
-                        colorFilter = ColorFilter.tint(color = MaterialTheme.colorScheme.onBackground),
-                        contentDescription = "Pet Cover Photo",
-                        modifier = Modifier
-                            .size(98.dp)
-                            .clip(CircleShape)
-                            .background(MaterialTheme.colorScheme.background),
-                        contentScale = ContentScale.Crop
-                    )
-                }
+                // ✅ Replaced old Image(...) with PetAvatar
+                PetAvatar(
+                    pet = pet,
+                    modifier = Modifier
+                        .size(98.dp)
+                        .clip(CircleShape),
+                    onImagePicked = { uri ->
+                        // Later: call ViewModel to upload the image
+                        // petViewModel.uploadPetImage(pet.id, uri)
+                    }
+                )
+
                 Column(
                     verticalArrangement = Arrangement.spacedBy(8.dp)
                 ) {
@@ -367,7 +353,6 @@ fun PetInfo(
                         verticalAlignment = Alignment.CenterVertically,
                         horizontalArrangement = Arrangement.spacedBy(8.dp)
                     ) {
-
                         Text(
                             text = pet.breed,
                             style = MaterialTheme.typography.bodyLarge,
@@ -438,41 +423,16 @@ fun PetInfo(
                         text = pet.microchipId.toString(),
                         style = MaterialTheme.typography.bodyLarge
                     )
-
-//                    Button(
-//                        onClick = { },
-//                        modifier = Modifier
-//                            .align(Alignment.End)
-//                            .padding(top = 8.dp)
-//                    ) {
-//                        Text(text = "View data")
-//
-//                    }
-
-                    //locate dog
-
-//                    Column(
-//                        verticalArrangement = Arrangement.spacedBy(4.dp)
-//                    ) {
-//                        Text(
-//                            text = "Locate Dog",
-//                            style = MaterialTheme.typography.titleSmall
-//                        )
-//                        Text(
-//                            text = pet.locate.toString(),
-//                            style = MaterialTheme.typography.bodyLarge
-//                        )
                 }
             }
         }
         Button(
-            onClick = {showAddressDialog.value=true },
+            onClick = { showAddressDialog.value = true },
             modifier = Modifier
                 .align(Alignment.End)
                 .padding(top = 8.dp)
         ) {
             Text(text = "Locate Your Dog")
-
         }
     }
 }

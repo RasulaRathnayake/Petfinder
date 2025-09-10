@@ -10,17 +10,17 @@
 10
 11    <!-- Permissions -->
 12    <uses-permission android:name="android.permission.INTERNET" />
-12-->/Users/user/AndroidStudioProjects/Petfinderpetcare/app/src/main/AndroidManifest.xml:6:5-67
-12-->/Users/user/AndroidStudioProjects/Petfinderpetcare/app/src/main/AndroidManifest.xml:6:22-64
+12-->/Users/user/AndroidStudioProjects/Petfinder@/app/src/main/AndroidManifest.xml:6:5-67
+12-->/Users/user/AndroidStudioProjects/Petfinder@/app/src/main/AndroidManifest.xml:6:22-64
 13    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-13-->/Users/user/AndroidStudioProjects/Petfinderpetcare/app/src/main/AndroidManifest.xml:7:5-79
-13-->/Users/user/AndroidStudioProjects/Petfinderpetcare/app/src/main/AndroidManifest.xml:7:22-76
+13-->/Users/user/AndroidStudioProjects/Petfinder@/app/src/main/AndroidManifest.xml:7:5-79
+13-->/Users/user/AndroidStudioProjects/Petfinder@/app/src/main/AndroidManifest.xml:7:22-76
 14    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-14-->/Users/user/AndroidStudioProjects/Petfinderpetcare/app/src/main/AndroidManifest.xml:8:5-78
-14-->/Users/user/AndroidStudioProjects/Petfinderpetcare/app/src/main/AndroidManifest.xml:8:22-76
+14-->/Users/user/AndroidStudioProjects/Petfinder@/app/src/main/AndroidManifest.xml:8:5-78
+14-->/Users/user/AndroidStudioProjects/Petfinder@/app/src/main/AndroidManifest.xml:8:22-76
 15    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-15-->/Users/user/AndroidStudioProjects/Petfinderpetcare/app/src/main/AndroidManifest.xml:9:5-80
-15-->/Users/user/AndroidStudioProjects/Petfinderpetcare/app/src/main/AndroidManifest.xml:9:22-78
+15-->/Users/user/AndroidStudioProjects/Petfinder@/app/src/main/AndroidManifest.xml:9:5-80
+15-->/Users/user/AndroidStudioProjects/Petfinder@/app/src/main/AndroidManifest.xml:9:22-78
 16
 17    <permission
 17-->[androidx.core:core:1.13.1] /Users/user/.gradle/caches/8.10.2/transforms/a111fc69d23e7a702872371072e28a04/transformed/core-1.13.1/AndroidManifest.xml:22:5-24:47
@@ -68,61 +68,61 @@
 39-->[org.osmdroid:osmdroid-android:6.1.15] /Users/user/.gradle/caches/8.10.2/transforms/08ea298177101a91be4ee2e67535e44b/transformed/osmdroid-android-6.1.15/AndroidManifest.xml:25:9-33
 40
 41    <application
-41-->/Users/user/AndroidStudioProjects/Petfinderpetcare/app/src/main/AndroidManifest.xml:11:5-42:19
+41-->/Users/user/AndroidStudioProjects/Petfinder@/app/src/main/AndroidManifest.xml:11:5-42:19
 42        android:allowBackup="true"
-42-->/Users/user/AndroidStudioProjects/Petfinderpetcare/app/src/main/AndroidManifest.xml:12:9-35
+42-->/Users/user/AndroidStudioProjects/Petfinder@/app/src/main/AndroidManifest.xml:12:9-35
 43        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 43-->[androidx.core:core:1.13.1] /Users/user/.gradle/caches/8.10.2/transforms/a111fc69d23e7a702872371072e28a04/transformed/core-1.13.1/AndroidManifest.xml:28:18-86
 44        android:dataExtractionRules="@xml/data_extraction_rules"
-44-->/Users/user/AndroidStudioProjects/Petfinderpetcare/app/src/main/AndroidManifest.xml:13:9-65
+44-->/Users/user/AndroidStudioProjects/Petfinder@/app/src/main/AndroidManifest.xml:13:9-65
 45        android:debuggable="true"
 46        android:extractNativeLibs="false"
 47        android:fullBackupContent="@xml/backup_rules"
-47-->/Users/user/AndroidStudioProjects/Petfinderpetcare/app/src/main/AndroidManifest.xml:14:9-54
+47-->/Users/user/AndroidStudioProjects/Petfinder@/app/src/main/AndroidManifest.xml:14:9-54
 48        android:icon="@drawable/ic_petcare_default"
-48-->/Users/user/AndroidStudioProjects/Petfinderpetcare/app/src/main/AndroidManifest.xml:15:9-52
+48-->/Users/user/AndroidStudioProjects/Petfinder@/app/src/main/AndroidManifest.xml:15:9-52
 49        android:label="@string/app_name"
-49-->/Users/user/AndroidStudioProjects/Petfinderpetcare/app/src/main/AndroidManifest.xml:16:9-41
+49-->/Users/user/AndroidStudioProjects/Petfinder@/app/src/main/AndroidManifest.xml:16:9-41
 50        android:roundIcon="@drawable/ic_dog_loading"
-50-->/Users/user/AndroidStudioProjects/Petfinderpetcare/app/src/main/AndroidManifest.xml:17:9-53
+50-->/Users/user/AndroidStudioProjects/Petfinder@/app/src/main/AndroidManifest.xml:17:9-53
 51        android:supportsRtl="true"
-51-->/Users/user/AndroidStudioProjects/Petfinderpetcare/app/src/main/AndroidManifest.xml:18:9-35
+51-->/Users/user/AndroidStudioProjects/Petfinder@/app/src/main/AndroidManifest.xml:18:9-35
 52        android:testOnly="true"
 53        android:theme="@style/Theme.PetCare" >
-53-->/Users/user/AndroidStudioProjects/Petfinderpetcare/app/src/main/AndroidManifest.xml:19:9-45
+53-->/Users/user/AndroidStudioProjects/Petfinder@/app/src/main/AndroidManifest.xml:19:9-45
 54
 55        <!-- Main Activity -->
 56        <activity
-56-->/Users/user/AndroidStudioProjects/Petfinderpetcare/app/src/main/AndroidManifest.xml:24:9-34:20
+56-->/Users/user/AndroidStudioProjects/Petfinder@/app/src/main/AndroidManifest.xml:24:9-34:20
 57            android:name="fi.project.petcare.MainActivity"
-57-->/Users/user/AndroidStudioProjects/Petfinderpetcare/app/src/main/AndroidManifest.xml:25:13-41
+57-->/Users/user/AndroidStudioProjects/Petfinder@/app/src/main/AndroidManifest.xml:25:13-41
 58            android:exported="true"
-58-->/Users/user/AndroidStudioProjects/Petfinderpetcare/app/src/main/AndroidManifest.xml:26:13-36
+58-->/Users/user/AndroidStudioProjects/Petfinder@/app/src/main/AndroidManifest.xml:26:13-36
 59            android:label="@string/app_name"
-59-->/Users/user/AndroidStudioProjects/Petfinderpetcare/app/src/main/AndroidManifest.xml:27:13-45
+59-->/Users/user/AndroidStudioProjects/Petfinder@/app/src/main/AndroidManifest.xml:27:13-45
 60            android:theme="@style/Theme.PetCare"
-60-->/Users/user/AndroidStudioProjects/Petfinderpetcare/app/src/main/AndroidManifest.xml:29:13-49
+60-->/Users/user/AndroidStudioProjects/Petfinder@/app/src/main/AndroidManifest.xml:29:13-49
 61            android:windowSoftInputMode="adjustResize" >
-61-->/Users/user/AndroidStudioProjects/Petfinderpetcare/app/src/main/AndroidManifest.xml:28:13-55
+61-->/Users/user/AndroidStudioProjects/Petfinder@/app/src/main/AndroidManifest.xml:28:13-55
 62            <intent-filter>
-62-->/Users/user/AndroidStudioProjects/Petfinderpetcare/app/src/main/AndroidManifest.xml:30:13-33:29
+62-->/Users/user/AndroidStudioProjects/Petfinder@/app/src/main/AndroidManifest.xml:30:13-33:29
 63                <action android:name="android.intent.action.MAIN" />
-63-->/Users/user/AndroidStudioProjects/Petfinderpetcare/app/src/main/AndroidManifest.xml:31:17-68
-63-->/Users/user/AndroidStudioProjects/Petfinderpetcare/app/src/main/AndroidManifest.xml:31:25-66
+63-->/Users/user/AndroidStudioProjects/Petfinder@/app/src/main/AndroidManifest.xml:31:17-68
+63-->/Users/user/AndroidStudioProjects/Petfinder@/app/src/main/AndroidManifest.xml:31:25-66
 64
 65                <category android:name="android.intent.category.LAUNCHER" />
-65-->/Users/user/AndroidStudioProjects/Petfinderpetcare/app/src/main/AndroidManifest.xml:32:17-76
-65-->/Users/user/AndroidStudioProjects/Petfinderpetcare/app/src/main/AndroidManifest.xml:32:27-74
+65-->/Users/user/AndroidStudioProjects/Petfinder@/app/src/main/AndroidManifest.xml:32:17-76
+65-->/Users/user/AndroidStudioProjects/Petfinder@/app/src/main/AndroidManifest.xml:32:27-74
 66            </intent-filter>
 67        </activity>
 68        <activity
-68-->/Users/user/AndroidStudioProjects/Petfinderpetcare/app/src/main/AndroidManifest.xml:37:9-40:38
+68-->/Users/user/AndroidStudioProjects/Petfinder@/app/src/main/AndroidManifest.xml:37:9-40:38
 69            android:name="fi.project.petcare.ui.MapActivity"
-69-->/Users/user/AndroidStudioProjects/Petfinderpetcare/app/src/main/AndroidManifest.xml:38:13-43
+69-->/Users/user/AndroidStudioProjects/Petfinder@/app/src/main/AndroidManifest.xml:38:13-43
 70            android:exported="true"
-70-->/Users/user/AndroidStudioProjects/Petfinderpetcare/app/src/main/AndroidManifest.xml:39:13-36
+70-->/Users/user/AndroidStudioProjects/Petfinder@/app/src/main/AndroidManifest.xml:39:13-36
 71            android:label="Pet Map" />
-71-->/Users/user/AndroidStudioProjects/Petfinderpetcare/app/src/main/AndroidManifest.xml:40:13-36
+71-->/Users/user/AndroidStudioProjects/Petfinder@/app/src/main/AndroidManifest.xml:40:13-36
 72
 73        <provider
 73-->[io.github.jan-tennert.supabase:compose-auth-android-debug:2.4.2] /Users/user/.gradle/caches/8.10.2/transforms/3d2871c2aaa5e4c5a2eebbacf0fc7094/transformed/compose-auth-debug/AndroidManifest.xml:9:9-17:20
